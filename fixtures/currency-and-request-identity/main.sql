@@ -1,0 +1,12 @@
+BEGIN TRANSACTION;
+CREATE TABLE "account" (id TEXT PRIMARY KEY, org TEXT, kind TEXT, currency TEXT);
+INSERT INTO "account" VALUES('a','north','payable','CNY');
+INSERT INTO "account" VALUES('b','spa','receivable','CNY');
+INSERT INTO "account" VALUES('c','spa','receivable','HKD');
+CREATE TABLE "opening_entries" (voucher TEXT, month TEXT, account TEXT, amount INTEGER, currency TEXT);
+CREATE TABLE "period" (org TEXT, month TEXT, state TEXT, actor TEXT, PRIMARY KEY(org,month));
+INSERT INTO "period" VALUES('north','05','open','lan');
+INSERT INTO "period" VALUES('spa','05','open','he');
+CREATE TABLE "source_cuts" (source TEXT PRIMARY KEY, final_through INTEGER);
+INSERT INTO "source_cuts" VALUES('hub',0);
+COMMIT;

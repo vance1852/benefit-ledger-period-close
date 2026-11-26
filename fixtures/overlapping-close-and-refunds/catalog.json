@@ -1,0 +1,16 @@
+{
+  "case": "overlapping-close-and-refunds",
+  "files": {
+    "main": {
+      "sql": "main.sql",
+      "tables": {
+        "account": 3,
+        "period": 6,
+        "opening_entries": 3,
+        "source_cuts": 2
+      }
+    }
+  },
+  "event_count": 15,
+  "limits": {}
+}

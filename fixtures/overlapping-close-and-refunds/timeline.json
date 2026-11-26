@@ -1,0 +1,150 @@
+[
+  {
+    "at": 1,
+    "action": "request",
+    "args": [
+      "clearing-1",
+      17,
+      "p17",
+      "03",
+      "CNY",
+      {
+        "fund-east": -5000,
+        "recv-care": 5000
+      }
+    ]
+  },
+  {
+    "at": 2,
+    "action": "ack_unknown",
+    "args": [
+      "p17"
+    ]
+  },
+  {
+    "at": 3,
+    "action": "request",
+    "args": [
+      "clearing-1",
+      18,
+      "p18",
+      "03",
+      "CNY",
+      {
+        "fund-east": -3000,
+        "recv-care": 3000
+      }
+    ]
+  },
+  {
+    "at": 4,
+    "action": "close_start",
+    "args": [
+      "zhou",
+      "care",
+      "03",
+      {
+        "clearing-1": 18
+      }
+    ]
+  },
+  {
+    "at": 5,
+    "action": "confirm",
+    "args": [
+      "p17"
+    ]
+  },
+  {
+    "at": 6,
+    "action": "confirm",
+    "args": [
+      "p18"
+    ]
+  },
+  {
+    "at": 7,
+    "action": "close_retry",
+    "args": [
+      "zhou",
+      "care",
+      "03",
+      {
+        "clearing-1": 18
+      }
+    ]
+  },
+  {
+    "at": 8,
+    "action": "close_reply_unknown",
+    "args": [
+      "care",
+      "03"
+    ]
+  },
+  {
+    "at": 9,
+    "action": "request",
+    "args": [
+      "clearing-1",
+      19,
+      "p19",
+      "03",
+      "CNY",
+      {
+        "fund-east": -1500,
+        "recv-care": 1500
+      }
+    ]
+  },
+  {
+    "at": 10,
+    "action": "restart",
+    "args": [
+      "ledger"
+    ]
+  },
+  {
+    "at": 11,
+    "action": "read_closed",
+    "args": [
+      "care",
+      "03"
+    ]
+  },
+  {
+    "at": 12,
+    "action": "refund",
+    "args": [
+      "r1",
+      "p16",
+      6000,
+      "04"
+    ]
+  },
+  {
+    "at": 12,
+    "action": "refund",
+    "args": [
+      "r2",
+      "p16",
+      5000,
+      "04"
+    ]
+  },
+  {
+    "at": 13,
+    "action": "retry",
+    "args": [
+      "r1"
+    ]
+  },
+  {
+    "at": 14,
+    "action": "read_closed",
+    "args": [
+      "care",
+      "03"
+    ]
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "case": "currency-and-request-identity",
+  "files": {
+    "main": {
+      "sql": "main.sql",
+      "tables": {
+        "account": 3,
+        "period": 2,
+        "opening_entries": 0,
+        "source_cuts": 1
+      }
+    }
+  },
+  "event_count": 3,
+  "limits": {}
+}
